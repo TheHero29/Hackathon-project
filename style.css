@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    scroll-behavior: smooth;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding:1.8rem;
+    background-color:#304672;
+    color:white;
+    position: -webkit-sticky;
+    width: 100vw;
+}
+nav div.leftBox{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(105, 187, 238);
+    transition:ease-in 1s;
+    transition: ease-out 2s;
+}
+div.rightBox{
+    display: flex;
+    gap:1.5rem;
+    font-size: 1.5rem;
+}
+.rightBox button{
+    border-radius: 3rem;
+    border-color: rgb(105, 187, 238);
+    background-color: #304672;
+    border-width: 1px ;
+    font-size: 1.2rem;
+}
+.rightBox button:hover{
+    background-color: rgb(105, 187, 238);
+    transition: all ease-in-out 1s;
+    color: white;
+}
+
+/* section 1 */
+section.sec1{
+    background-color: #304672;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+section.sec1 div.up
+{
+    color:white;
+    font-size: 2rem;
+    padding:8rem 8rem 2rem 8rem;
+    text-transform: uppercase;
+}
+
+section.sec1 div.down{
+    color:white;
+    padding:3rem 8rem 8rem 8rem ;
+}
+div.down button.get-started{
+    border-radius:3rem;
+    background-color: rgb(105, 187, 238);
+    padding: 0.7rem;
+    color: white;
+    margin: 0.6rem;
+    font-size: 1.5rem;
+}
+div.rightbox-sec1 div.down label{
+     font-size: 1.5rem;
+}
+section.sec1 img{
+    height: 50vh;
+    width:45vw;
+    padding:3rem;
+    margin: 2rem;
+    animation: upDown infinite linear alternate 2s;
+}
+
+@keyframes upDown{
+    0%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(1rem);
+    }
+}
+
+/* section about-us */
+section.about-us{
+    background-color:white;
+    position: relative;
+    /* display:flex; */
+    justify-content: center;
+    box-sizing: border-box;
+    height: 70vh;
+    /* C4C4C9 
+    #*/
+}
+section.about-us h2{
+    color: #304672;
+    text-transform: uppercase;
+    text-decoration: rgb(11, 11, 151) underline;
+    position: absolute;
+    top:2rem;
+    font-size: 3rem;
+    /* display: flex;
+    justify-content: center; */
+    left:45%
+    
+
+}
+body img{
+    width: 100vw;
+    height:15vh;
+}
+
+section.about-us div{
+    /* 
+    left: 30%;
+    top:30% */
+    position: relative;
+    display: flex;
+    /* align-items: end; */
+    /* justify-content: start; */
+}
+.leftArt{
+    position: relative;
+    top:30vh;
+    color:rgb(5, 46, 71) ;
+}
+.rightArt{
+    position: relative;
+    top:30vh;
+    color: rgb(5, 46, 71);
+}
+.yes{
+    width: 100vw;
+    display: flex;
+}
+section.about-us div article
+{
+    /* display: flex;
+    align-items: center;*/
+    /* height: 100vh;
+    width: 50vw; */
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 4rem;
+} 
+
+.about-us2{
+    background-color: #DADBE0;
+}
+
+.yes p{
+    padding:15rem;
+    font-size: 1.5rem;
+}
+
+.yes img{
+    height: 50vh;
+    width: 40vw;
+}
+footer{
+    background-color: #304672;
+    font-size: 1.3rem;
+    color: whitesmoke;
+    text-align: end;
+    padding: 1.5rem;
+}
