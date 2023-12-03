@@ -1,7 +1,7 @@
 *{
-    margin:0;
-    scroll-behavior: smooth;
-    
+    margin:0%;
+    box-sizing: border-box;
+    padding: 0%;
 }
 nav {
     display: flex;
@@ -10,12 +10,20 @@ nav {
     padding:1.8rem;
     background-color:#304672;
     color:white;
-    position: -webkit-sticky;
+    position: sticky;
+    top:0;
     width: 100vw;
 }
 nav div.leftBox{
     text-transform: uppercase;
     font-size: 1.7rem;
+}
+.rightBox select{
+border-radius: 3rem;
+border: 0rem;
+background-color: #304672;
+color: white;
+font-size: 1.3rem;
 }
 nav a{
     color: white;
@@ -37,15 +45,19 @@ div.rightBox{
     background-color: #304672;
     border-width: 1px ;
     font-size: 1.2rem;
+    padding: 5px;
 }
 .rightBox button:hover{
-    background-color: rgb(105, 187, 238);
-    transition: all ease-in-out 1s;
-    color: white;
+    scale: 1.05;
+    transition: 1s;
+    color: #304672;
+    background-color: white;
 }
+
 
 /* section 1 */
 section.sec1{
+    z-index: -1;
     background-color: #304672;
     display: flex;
     justify-content: space-between;
@@ -71,6 +83,13 @@ div.down button.get-started{
     margin: 0.6rem;
     font-size: 1.5rem;
 }
+div.down button.get-started:hover{
+    scale: 1.1;
+    transition: 1s;
+    background-color: white;
+    color: #304672;
+}
+
 div.rightbox-sec1 div.down label{
      font-size: 1.5rem;
 }
@@ -93,14 +112,12 @@ section.sec1 img{
 
 /* section about-us */
 section.about-us{
+    z-index: -1;
     background-color:white;
     position: relative;
-    /* display:flex; */
     justify-content: center;
     box-sizing: border-box;
     height: 70vh;
-    /* C4C4C9 
-    #*/
 }
 section.about-us h2{
     color: #304672;
@@ -109,8 +126,6 @@ section.about-us h2{
     position: absolute;
     top:2rem;
     font-size: 3rem;
-    /* display: flex;
-    justify-content: center; */
     left:45%
     
 
@@ -118,16 +133,12 @@ section.about-us h2{
 body img{
     width: 100vw;
     height:15vh;
+    box-sizing: border-box;
 }
 
 section.about-us div{
-    /* 
-    left: 30%;
-    top:30% */
     position: relative;
     display: flex;
-    /* align-items: end; */
-    /* justify-content: start; */
 }
 .leftArt{
     position: relative;
@@ -145,15 +156,26 @@ section.about-us div{
 }
 section.about-us div article
 {
-    /* display: flex;
-    align-items: center;*/
-    /* height: 100vh;
-    width: 50vw; */
     text-align: center;
     font-size: 1.5rem;
     padding: 4rem;
 } 
 
+.rightArt button {
+    background-color: #304672;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rightArt button:hover{
+    background-color: rgb(105, 187, 238);
+    color: white;
+}
 .about-us2{
     background-color: #DADBE0;
 }
@@ -167,6 +189,83 @@ section.about-us div article
     height: 50vh;
     width: 40vw;
 }
+
+/* services */
+#services{
+    height: 40rem;
+    background: none;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 5rem;
+}
+#services>h1{
+    align-self:center;
+    color: darkblue;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+#services>p{
+    color: gray;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#services .services-box-container{
+    display: flex;
+    gap: 2rem;
+}
+.s-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18rem;
+    background-color: whitesmoke;
+    padding: 3rem;
+    overflow: auto;
+}
+#services .services-box-container .s-box i{
+    font-size: 3rem;
+}
+
+/* Teams */
+
+.teams {
+    background-color: #DADBE0;
+    padding: 40px;
+    text-align: center;
+}
+
+.teams h2 {
+    color: #304672;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.teams p {
+    color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.up_teams_,
+.down_teams_ {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.teams .box {
+    width: 48%;
+    height: 30vh;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+
+/* footer */
 footer{
     background-color: #304672;
     font-size: 1.3rem;
